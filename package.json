@@ -1,7 +1,7 @@
 {
-  "name": "heroku-malab-node-seed",
+  "name": "node-dokku-seed",
   "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4 for connecting malb in heroku",
+  "description": "A sample Node.js app using Express 4 for dokku",
   "engines": {
     "node": "5.9.1"
   },
@@ -20,9 +20,8 @@
   },
   "keywords": [
     "node",
-    "heroku",
-    "express",
-    "mlab"
+    "dokku",
+    "express"
   ],
   "license": "MIT"
 }

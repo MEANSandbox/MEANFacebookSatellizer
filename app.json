@@ -1,7 +1,0 @@
-{
-  "name": "Node.js Getting Started",
-  "description": "A Node server with Mlab configured for heroku in Express 4",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
-}
