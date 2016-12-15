@@ -17,8 +17,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/login',
   function(req, res){
-    // res.render('login', { env: env });
-    res.sendFile(path.resolve('views/login.html'));
+    res.render('login', { env: env });
+    // res.sendFile(path.resolve('views/login.html'));
   });
 
 router.get('/logout', function(req, res){
