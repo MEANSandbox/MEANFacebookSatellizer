@@ -16,9 +16,9 @@ var user = require('./routes/user');
 
 // This will configure Passport to use Auth0
 var strategy = new Auth0Strategy({
-    domain:       process.env.AUTH0_DOMAIN,
-    clientID:     process.env.AUTH0_CLIENT_ID,
-    clientSecret: process.env.AUTH0_CLIENT_SECRET,
+    domain:       process.env.AUTH0_DOMAIN || rishabh.auth0.com,
+    clientID:     process.env.AUTH0_CLIENT_ID || cUheWwRxm7OLdHBRzlBNhhaI1lxRp6Km,
+    clientSecret: process.env.AUTH0_CLIENT_SECRET || e37eIZpjgBnDMBtrYMwaU4jSqt8qylZMT9Oj1EiffLGViinWQ5AiuWi1-WBwA8v3,
     callbackURL:  process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
   }, function(accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)
