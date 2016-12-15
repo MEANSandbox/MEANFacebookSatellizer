@@ -4,8 +4,8 @@ block content
   div(id="root" style="width: 280px; margin: 40px auto; padding: 10px;")
 
   script.
-    var lock = new Auth0Lock('#{env.AUTH0_CLIENT_ID}', '#{env.AUTH0_DOMAIN}', { auth: {
-          redirectUrl: '#{env.AUTH0_CALLBACK_URL}'
+    var lock = new Auth0Lock('cUheWwRxm7OLdHBRzlBNhhaI1lxRp6Km', 'rishabh.auth0.com', { auth: {
+          redirectUrl: 'http://localhost:3000/callback'
         , responseType: 'code'
         , params: {
           scope: 'openid name email picture'
