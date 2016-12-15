@@ -12,11 +12,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 
 app.get('/', function(req, res) {
-    res.json({"name":"dimitri","password":"dimitri"})
+    res.json({"name":"SCOTT","password":"BECKEY"})
 });
 
 app.get('/test',function(req,res){
-    res.json({"name":"dimitri","password":"dimitri","message":"test 1 API Endpoint"})
+    res.json({"name":"SCOTT","password":"BECKEY","message":"test 1 API Endpoint"})
 })
 
 
