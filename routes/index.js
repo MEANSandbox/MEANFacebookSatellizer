@@ -12,7 +12,9 @@ var env = {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Coming Soon.', env: env });
+  // res.render('index', { title: 'Coming Soon.', env: env });
+    res.sendFile(path.resolve('views/index.html'));
+  
 });
 
 router.get('/login',
