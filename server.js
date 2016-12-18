@@ -67,8 +67,8 @@ var User = mongoose.model('User', userSchema);
 
 var app = express();
 
-app.set('port', process.env.NODE_PORT || 3000);
-app.set('host', process.env.NODE_IP || 'localhost');
+app.set('port', process.env.PORT || 3000);
+// app.set('host', process.env.NODE_IP || 'localhost');
 app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
