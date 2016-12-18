@@ -1,38 +1,21 @@
 {
-  "name": "node-dokku-seed",
-  "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4 for dokku",
-  "engines": {
-    "node": "5.9.1"
-  },
-  "main": "index.js",
+  "name": "satellizer-server",
+  "version": "0.0.0",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "ejs": "2.4.1",
-    "express": "4.13.3",
-    "mongoose": "^4.4.20",
-    "connect-ensure-login": "^0.1.1",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "dotenv": "^1.2.0",
-    "express-session": "^1.11.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "passport": "^0.3.0",
-    "passport-auth0": "^0.5.0",
-    "serve-favicon": "~2.3.0"
-    
-  },
-  "repository": {
-    "type": "git"
-  },
-  "keywords": [
-    "node",
-    "dokku",
-    "express"
-  ],
-  "license": "MIT"
+    "async": "^1.5.2",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.0",
+    "colors": "^1.1.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.4.1",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "request": "^2.69.0"
+  }
 }
