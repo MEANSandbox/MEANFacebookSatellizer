@@ -60,10 +60,10 @@ userSchema.methods.comparePassword = function(password, done) {
 
 var User = mongoose.model('User', userSchema);
 
-// mongoose.connect(config.MONGO_URI);
-// mongoose.connection.on('error', function(err) {
-//   console.log('Error: Could not connect to MongoDB. Did you forget to run `mongod`?'.red);
-// });
+mongoose.connect(config.MONGO_URI);
+mongoose.connection.on('error', function(err) {
+  console.log('Error: Could not connect to MongoDB. Did you forget to run `mongod`?'.red);
+});
 
 var app = express();
 
@@ -366,5 +366,5 @@ app.post('/auth/unlink', ensureAuthenticated, function(req, res) {
  |--------------------------------------------------------------------------
  */
 app.listen(app.get('port'), app.get('host'), function() {
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('APP LDXCH Express server listening on port ' + app.get('port'));
 });

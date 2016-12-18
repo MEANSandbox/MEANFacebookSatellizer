@@ -1,8 +1,8 @@
 module.exports = {
   // App Settings
-  MONGO_URI: process.env.MONGO_URI || 'localhost',
+  MONGO_URI: process.env.MONGO_URI || 'mongodb://test:test@ds019980.mlab.com:19980/ipl16', //'localhost',
   TOKEN_SECRET: process.env.TOKEN_SECRET || 'YOUR_UNIQUE_JWT_TOKEN_SECRET',
-
+// mongodb://<dbuser>:<dbpassword>@ds019980.mlab.com:19980/ipl16
   // OAuth 2.0
   FACEBOOK_SECRET: process.env.FACEBOOK_SECRET || '762970cf1a6a8fde2dbde80502d4b1be',// '84e952da26fc9e7a12bbc32523efa8a0',
   GOOGLE_SECRET: process.env.GOOGLE_SECRET || 'YOUR_GOOGLE_CLIENT_SECRET',
